@@ -700,7 +700,7 @@ form input:-webkit-autofill {
     justify-content: flex-end;
 }
 .footer-right-contain .column {
-    margin: auto;
+    justify-content: flex-end;
 }
 .footer-end {
     display: flex;
@@ -1162,7 +1162,7 @@ form .user-details .button-teal input{
         text-align: center;
     }
     .admin-text-contain {
-        padding: 0 8em;
+        padding: 0 6em;
     }
     .admin-comingsoon {
         padding: 6em 5em;
@@ -1186,8 +1186,9 @@ form .user-details .button-teal input{
         padding: 5em 2em;
     }
     .admin-text-contain {
-        padding: 0 2em;
+        padding: 0 4em;
     }
+    
     .icons-float img {
         width: 780px;
         margin-top: -400px;
@@ -1213,7 +1214,7 @@ form .user-details .button-teal input{
         padding: 0 2em;;
     }
     .admin-comingsoon form{
-        width: 70%;
+        width: 80%;
         margin: 4em auto 2em auto;
     }
     .admin-comingsoon form input {
@@ -1405,7 +1406,7 @@ form .user-details .button-teal input{
         width: 540px;
     }
     .admin-contain {
-        padding: 1em 4em;
+        padding: 1em 1.5em;
     }
     .admin-contain .left-float img {
         display: none;
@@ -1422,6 +1423,13 @@ form .user-details .button-teal input{
     }
     .admin-comingsoon {
         padding: 8em 1em;
+    }
+    .admin-comingsoon form input  {
+        font-size: 16px;
+    }
+    form button {
+        font-size: 16px;
+        width: 120px;
     }
 } 
 
@@ -1532,7 +1540,7 @@ form .user-details .button-teal input{
         width: 80%;
     }
     .admin-comingsoon {
-        margin: -1383px 1.5em 0 1.5em;
+        margin: -1550px 1.5em 0 1.5em;
         padding: 8em 0;
     }
     .cta-contain {
