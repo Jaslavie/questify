@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waitlist Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="waitlist-contain">
+        <div class="left-form">
+            <div class="stars-float">
+                <img src="images/stars waitlist float.svg">
+            </div>
+            <img src="images/left waitlist.svg" alt=""> 
+                
+            
+        </div>
+        <div class="right-form">
+            <div class="row">
+                <div class="form-topper">
+                   <img src="images/questify logo full.png" alt="">
+                   <div class="waitlist-horizontal-seperator"></div> 
+                </div>
+                <a href="index.html"><img src="images/close icon.png" alt=""></a>
+            </div>
+                
+                
+               
+                    
+                   
+                
+                <form name="submit-to-google-sheet">
+                     
+                    <div class="user-details">
+                        <h2>join the waitlist</h2> 
+                        <div class="input-box">
+                            <span class="details">your email</span>
+                            <input type="text" name="Email" placeholder="enter your email" required>
+                        </div>
+
+                        <div class="row-waitlist">
+                            <div class="input-box">
+                                <span class="details">first name</span>
+                                <input type="text" name="First Name" placeholder="first name" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">last name</span>
+                                <input type="text" name="Last Name" placeholder="last name" required>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">your university</span>
+                            <input type="text" name="University" placeholder="enter the name of your university here" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">what is your @ (ig, discord,twitter)? </span>
+                            <input type="text" name="Social Media" placeholder="ex: @mrbeast (ig)">
+                        </div>
+                        <div class="button-teal">
+                            <input type="submit" value="submit">
+                        </div>
+                    </div>
+                    
+                </form>
+                <span id="msg"></span>
+        </div>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbynfANMcrwiGsCEoboLpB_6s3I6hcqUDCkFZYrj23hbS5GvqUcE7A2EB5Nu97ioxYY3/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "congrats! you're on the waitlist! 🥳"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+    </div>
+    
+    
+</body>
+</html>

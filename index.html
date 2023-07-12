@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="navbar">
+        <div class="row-nav">
+            <div class="left-nav">
+                <a href="index.html" style="cursor: pointer;">
+                   <img src="images/questify logo full.png" alt=""> 
+                </a>
+                
+            </div>
+            
+            <div class="right-nav">
+                <div class="row">
+                    <div class="nav-links">
+                        <a href="#">about us</a>
+                        <a href="#features">features</a>
+                    </div>
+                    
+                    <a href="waitlist.html" class="button-teal">join now</a>
+                    <div class="toggle-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- dropdown for responsive nav -->
+    <div class="dropdown-nav">
+        <div class="column">
+            <a href="#">about us</a>
+            <a href="#features">features</a>
+            <a href="waitlist.html" class="button-teal">join now</a>
+        </div>
+        
+    </div>
+    <!-- script for dropdown -->
+    <script>
+        const toggleNav = document.querySelector('.toggle-nav')
+        const toggleNavIcon = document.querySelector('.toggle-nav i')
+        const dropDownMenu = document.querySelector('.dropdown-nav')
+
+        toggleNav.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleNavIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+
+    <!-- hero langing page -->
+    <div class="hero-landing">
+        <div class="row">
+            <div class="left-hero">
+                <h1>the only <span>university app</span> you never knew you needed</h1>
+                <p class="hero-p">supercharging your uni life by [organically] discovering events you’re actually interested in</p>
+                <a href="waitlist.html" class="button-teal" style="padding: 15px 30px;">
+                    <div class="row">
+                        <p>join now</p>
+                        <img src="images/arrow up black.png" alt=""> 
+                    </div>
+                    
+                </a>
+            </div>
+            <div class="right-hero">
+                <div class="stars-float">
+                    <img src="images/stars float.svg" alt="">
+                </div>
+                <div class="left-float">
+                    <img src="images/xp count float.svg" >
+                </div>
+                <div class="phone-mockup">
+                    <img src="images/home screen questify.svg">
+                </div>
+                
+                <div class="right-float" >
+                    <img src="images/join event float.svg">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- key benefits -->
+    <div class="benefits-contain">
+        <div class="left-benefits">
+            <div class="stars-float-black">
+                <img src="images/stars benefits.png" >
+            </div>
+            <div class="phone-mockup">
+                <img src="images/benefits phone.svg">
+            </div>
+            
+        </div>
+        <div class="right-benefits">
+            <h2>join the <span>fastest-growing</span> community of uni students</h2>
+            <!-- networking -->
+            <div class="benefit-highlight-panel">
+                <div class="row-benefits">
+                    <img src="images/network icon.svg" alt="">
+                    <div class="row-benefits-interior">
+                       <h3>easily network with like-minded peers</h3>
+                       <p>based on topics you’re actually passionate about</p> 
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- balance -->
+            <div class="benefit-panel">
+                <div class="row-benefits">
+                    <img src="images/balance icon.svg" alt="">
+                    <div class="row-benefits-interior">
+                        <h3>balance your entire life-flow</h3>
+                        <p>from academics and career goals to personal self-growth — achieve productive mastery</p>
+                    </div>
+                </div>
+            </div>
+            <!-- exploration -->
+            <div class="benefit-panel">
+                <div class="row-benefits">
+                    <img src="images/explore icon.png" alt="">
+                    <div class="row-benefits-interior">
+                        <h3>Explore Experiences tailored to you</h3>
+                        <p>discover events based on time, location, and topic</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- key features section -->
+    <div class="features-contain" id="features">
+        <!-- top feature -->
+        <div class="top-features-contain">
+            <div class="left-features">
+                <div class="row-features">
+                    <div class="features-icon">
+                        <img src="images/home teal icon.png">
+                    </div>
+                   <h3>set <span>goal-based tasks</span> and track your progress</h3>
+                    <p>set tasks based on broader goals and see the your progress increase as you complete more tasks to meet these goals.</p> 
+                    <a href="waitlist.html" class="button-teal">join now</a>
+                </div>
+            </div>
+            <div class="right-features">
+                <div class="image-contain-top">
+                    <div class="left-float">
+                        <img src="images/tasks done float.svg">
+                    </div>
+                
+                    <img src="images/phone top feature.svg" style="z-index: 10; position: relative">
+                    
+                    
+                    <div class="right-float">
+                        <img src="images/progress float.svg">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- mid feature -->
+        <div class="top-features-contain">
+            <div class="mid-order-img">
+                <div class="left-features">
+                    <div class="image-contain-mid">
+                        <div class="left-float">
+                            <img src="images/geocommunity event float.svg">
+                        </div>
+                        <img src="images/phone geomunnity.svg" style="position: relative">
+                        <div class="right-float">
+                            <img src="images/milage float.svg">
+                        </div>
+                    </div>
+                        
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="mid-order-text">
+                <div class="right-features">
+                    
+                    <div class="row-features">
+                        <div class="features-icon">
+                            <img src="images/geocommunity icon teal.png">
+                        </div>
+                        
+                    <h3>easily <span>discover</span> on-campus events</h3>
+                        <p>automized recommendations based on selected topics of interest, location, and timing.</p> 
+                        <a href="waitlist.html" class="button-teal">join now</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- bottom feature -->
+        <div class="top-features-contain">
+            <div class="left-features">
+                <div class="row-features">
+                    <div class="features-icon">
+                       <img src="images/xp icon teal.png"> 
+                    </div>
+                    
+                   <h3>turn productivity into a <span>game</span></h3>
+                    <p>earn XP by participating in club events, advance levels, track your progress, and advance on the leaderboard.</p> 
+                    <a href="waitlist.html" class="button-teal">join now</a>
+                </div>
+            </div>
+            <div class="right-features">
+                <div class="image-contain-bottom">
+                    <div class="left-float">
+                        <img src="images/profile float.svg">
+                    </div>
+                    <img src="images/phone progress.svg" style="z-index: 10; position: relative;">
+                    <div class="right-float">
+                        <img src="images/stats float.svg" style="z-index: 1000;">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- admin feature -->
+    <div class="admin-contain">
+        <div class="left-float">
+            <img src="images/stars admin float.svg">
+        </div>
+        <div class="admin-text-contain">
+            <h2>club admins: <span>centralize</span> all event metrics <span>in one place</span></h2>
+            <p>track all event data from attendance counts, CTR, and engagement — automized for you.</p>
+        </div>
+        
+    </div>
+
+    <!-- final cta section -->
+    <div class="cta-contain">
+        
+        <div class="admin-comingsoon">
+            <div class="admin-comingsoon-text-contain">
+                <h1>coming soon!</h1>
+                <p>enter your email to be notified when the admin dashboard launches!</p>
+            </div>
+            <form name="submit-to-google-sheet">
+                <input type="email" name="email" placeholder="your email">
+                <button type="submit">send</button>
+                
+            </form>
+                <span id="msg"></span>
+            
+        </div>
+        <div class="cta-text-contain" style="z-index: 900;">
+            <h2><span>supercharge</span> your university life</h2>
+            <p>Cultivate your passions and experience serendipity without any extra work.</p>
+            <a href="waitlist.html" class="button-teal" style="z-index: 100; margin: 4em auto; align-items: center;">
+                <div class="row">
+                  <p style="white-space: nowrap;">join the waitlist</p>
+                    <img src="images/arrow up black.png" alt="">   
+                </div>
+            </a>
+            <div class="icons-float" style=" pointer-events: none; display: flex; position: relative; justify-content: center; z-index: 1;">
+                <img src="images/icons float.svg" style="max-width: 900px;">
+            </div>
+        </div>
+        
+        
+
+    </div>
+     <!-- for subscription form -->
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwwBkLfNtbjlvY_0Qg-8Vv8KtO6U4hPg86pZy_Yfd5lnry4-B3nPZvupkIDdwwNr42xQQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "success! you'll be notified on any updates with the web app!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.resest()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- footer section -->
+    <div class="footer-contain">
+        <div class="footer-top">
+            <div class="footer-left-contain">
+                <div class="logo-contain">
+                    <img src="images/questify logo black full.svg" alt="">
+                </div>
+                <div class="social-contain">
+                    <div class="row">
+                        <a href="#"><img src="images/youtube socials.svg" alt=""></a>
+                        <a href="#"><img src="images/linkedn social.svg" alt=""></a>
+                        <a href="#"><img src="images/discord social.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-right-contain">
+                <div class="column">
+                    <a href="#">about us</a>
+                    <a href="#">contact us</a>
+                    <a href="waitlist.html">join waitlist</a>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="footer-end">
+            <div class="row-footer">
+                <div class="footer-left-contain">
+                    <p style="white-space: nowrap; text-align: left;">Questify © 2023</p>
+                </div>
+                
+                <div class="horizontal-line-left"></div>
+                <img src="images/questify logo icon.svg" style="max-width: 60px;">
+                <div class="horizontal-line-right"></div>
+                <div class="footer-right-contain">
+                   <p style="white-space: nowrap; text-align: right;">built with 🖤 by uci students</p> 
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
