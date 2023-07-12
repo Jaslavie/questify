@@ -4,6 +4,7 @@
 }
 body {
     background-color: #181A1E;
+    overflow-x: hidden;
 }
 h1 {
     font-size: 50px;
@@ -789,6 +790,7 @@ form input:-webkit-autofill {
 .left-form img {
     width: 50vw;
     height: auto;
+    overflow: hidden;
 }
 .right-form {
     padding: 0 4em;
@@ -796,6 +798,7 @@ form input:-webkit-autofill {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    overflow: hidden;
 }
 .right-form .form-topper {
     display: flex;
@@ -880,6 +883,8 @@ form .user-details .input-box input:not(:placeholder-shown) {
 form .user-details .input-box .details {
     color:#ffffff;
     font-size: 14px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     
 }
 form .user-details .input-box input {
@@ -887,7 +892,7 @@ form .user-details .input-box input {
 }
 
 form .user-details .input-box{
-    margin: 1em 4em 1em 0;
+    margin: 1em 0em 1em 0;
 }
 
 form .user-details .button-teal input{
@@ -1275,6 +1280,7 @@ form .user-details .button-teal input{
     .image-contain-mid img,
     .image-contain-top img {
         height: 500px;
+        z-index: 10;
     }
     /* .image-contain-mid {
         margin-left: -75px;
@@ -1401,6 +1407,8 @@ form .user-details .button-teal input{
     }
     .footer-top .column a {
         margin: 1em;
+        text-align: center;
+        white-space: nowrap;
     }
     .icons-float img {
         width: 540px;
@@ -1465,7 +1473,7 @@ form .user-details .button-teal input{
     }
 }
 
-/* smallest screen size */
+/* smallest screen size on macbook*/
 
 @media (max-width: 500px) {
     
@@ -1548,10 +1556,132 @@ form .user-details .button-teal input{
     }
     
     
+    
 }
 
-
-
+/* iphone 7*/
+@media (max-width: 400px) {
+    .phone-mockup img {
+        height: 375px;
+    }
+    .image-contain-bottom img, .image-contain-mid img, .image-contain-top img {
+        height: 450px;
+    }
+    .hero-landing h1,
+    .benefits-contain h2 {
+        font-size: 30px;
+    }
+    .right-form .row a img {
+        display: none;
+    }
+    .right-form .form-topper {
+        align-items: center;
+    }
+/* change the p font size */
+    .hero-landing .left-hero .hero-p,
+    .admin-contain .admin-text-contain p,
+    .cta-contain p{
+        font-size: 18px;
+    }
+    
+    .right-hero .right-float img {
+        width: 165px;
+    }
+    .right-hero .left-float img {
+        margin-top: 90px;
+        width: 153px;
+        margin-left: 47px;
+    }
+    .cta-contain {
+        margin: 12em 0 4em 0;
+    }
+    .admin-comingsoon {
+        margin: -1326px 1.5em 0 1.5em;
+        padding: 7em 0;
+    }
+    
+    .right-hero {
+        margin: 2em 0 0 0;
+    }
+    .hero-landing {
+        margin: 4em 0;
+    }
+    .row-benefits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row-benefits-interior {
+        margin: 1.5em 0;
+    }
+    .row-benefits .row-benefits-interior h3,  
+    .row-benefits .row-benefits-interior p {
+        text-align: center;
+    }
+    .benefit-highlight-panel,
+    .benefit-panel {
+        padding: 2em 1em;
+        margin: 1em;
+    }
+    .left-benefits .stars-float-black img {
+        height: 318px;
+    }
+    .phone-mockup {
+        height: 432px;
+    }
+    /* feawtures */
+    .row-features h3,
+    .admin-text-contain h2 {
+        font-size: 30px;
+    }
+    .image-contain-top .right-float img {
+        max-height: 86px;
+        margin-top: -138px;
+        margin-left: 0;
+    }
+    .image-contain-mid .left-float img {
+        margin-top: -104px;
+        max-width: 178px;
+        margin-left: 77px;
+    }
+    .image-contain-bottom .right-float img {
+        margin-top: -341px;
+        margin-left: 81px;
+        max-width: 207px;
+    }
+    .top-features-contain {
+        padding: 2em;
+    }
+    .row-features h3,
+    .row-features p {
+        padding: 0 1em;
+        
+    }
+    .image-contain-bottom .left-float img {
+        margin-left: -24px;
+        margin-top: -80px;
+        position: relative;
+        z-index: 2000000;
+        max-width: 145px;
+    }
+    .cta-text-contain {
+        padding: 0 0;
+    }
+    .image-contain-mid .right-float img {
+        margin-left: -33px;
+        margin-top: -276px;
+        width: 166px;
+    }
+    .image-contain-top .left-float img {
+        margin-left: -48px;
+        width: 130px;
+        z-index: 1000000;
+    }
+    .image-contain-top img {
+        height: 500px;
+        z-index: 1;
+    }
+}
 
 
 /* waitlist form responsiveness */
@@ -1652,9 +1782,7 @@ form .user-details .button-teal input{
         width: 100%;
     }
     .left-form .stars-float img {
-        margin-top: 12vw;
-        margin-right: 22vw;
-        height: 500px;
+        display: none;
     }
     form .user-details .button-teal {
         margin: 3em auto 5em auto;
@@ -1664,7 +1792,7 @@ form .user-details .button-teal input{
 
 
 
-/* phone */
+/* i- phone waitlist*/
 @media (max-width: 500px) {
     form .user-details {
         margin: 0 5em 0 0;
@@ -1672,6 +1800,31 @@ form .user-details .button-teal input{
     }
     form {
         margin: 0;
+    }
+    .waitlist-contain {
+        justify-content: flex-start;
+    }
+    form {
+        padding: 0;
+    }
+    form .user-details {
+        margin: 0;
+    }
+    form .user-details input{
+        width: 90%;
+    }
+    .right-form .form-topper img {
+        max-width: 164px;
+    }
+    form .user-details {
+        padding: 20px;
+        width: 90%;
+    }
+    .right-form {
+        box-sizing: border-box;
+    }
+    .user-details .input-box input {
+        width: 92%;
     }
     
 }
