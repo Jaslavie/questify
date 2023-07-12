@@ -1442,6 +1442,10 @@ form .user-details .button-teal input{
         margin: -1383px 1.5em 0 1.5em;
         padding: 8em 0;
     }
+    .hero-landing h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
 }
 
 /* smallest screen size */
@@ -1471,7 +1475,7 @@ form .user-details .button-teal input{
     }
     
     .right-hero .right-float img{
-        margin-top: -900px;
+        margin-bottom: 459px;
         width: 200px;
     }
     .right-hero .stars-float img {
