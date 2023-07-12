@@ -942,7 +942,7 @@ form .user-details .button-teal input{
 }
     
 
-@media (max-width: 1319px) {
+@media (max-width: 1330px) {
     .hero-landing {
         padding: 0 6.5em;
     }
@@ -1258,14 +1258,14 @@ form .user-details .button-teal input{
         width: 690px;
         margin-top: -400px;
     }
+    .hero-landing {
+        padding: 2em;
+    }
 }
 
 @media (max-width: 770px) {
     .benefits-contain {
         padding: 1em 2em;
-    }
-    .hero-landing {
-        padding: 2em;
     }
     .top-features-contain {
         padding: 4em -4em 4em 8em;
@@ -1375,6 +1375,10 @@ form .user-details .button-teal input{
     /* .mid-order-img, .mid-order-text {
         margin: 1em 3em 1em -5em;
     } */
+    .navbar {
+        padding: 1em 1.5em;
+    }
+
     .footer-end {
         margin-top: 3em;
     }
@@ -1429,7 +1433,6 @@ form .user-details .button-teal input{
     .cta-contain {
         margin: 18em 0 4em 0;
     }
-
     
 }
 
@@ -1446,24 +1449,18 @@ form .user-details .button-teal input{
         font-size: 40px;
         line-height: 48px;
     }
-}
-
-/* smallest screen size */
-
-@media (max-width: 500px) {
-    .hero-landing h1 {
-        font-size: 40px;
-        line-height: 48px;
-    }
     .hero-landing {
         padding: 0 1.5em;
     }
     .left-hero {
         width: 100%;
     }
-    .navbar {
-        padding: 1em 1.5em;
-    }
+}
+
+/* smallest screen size */
+
+@media (max-width: 500px) {
+    
     .phone-mockup img {
         height: 500px;
     }
