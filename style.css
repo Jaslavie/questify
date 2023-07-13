@@ -1494,9 +1494,10 @@ form .user-details .button-teal input{
         width: 200px;
     }
     .right-hero .stars-float img {
-        height: 374px;
+        /* height: 374px;
         margin-top: -226px;
-        margin-right: 118px;
+        margin-right: 118px; */
+        display: none;
     }
     .benefits-contain h2 {
         font-size: 35px;
