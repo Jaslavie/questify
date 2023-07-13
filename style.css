@@ -1561,8 +1561,9 @@ form .user-details .button-teal input{
     
 }
 
+
 /* iphone 12*/
-@media (max-width: 400px) {
+@media (max-width: 414px) {
     .phone-mockup img {
         height: 375px;
     }
@@ -1660,7 +1661,7 @@ form .user-details .button-teal input{
         
     }
     .image-contain-bottom .left-float img {
-        margin-left: -24px;
+        margin-left: -5px;
         margin-top: -80px;
         position: relative;
         z-index: 2000000;
@@ -1688,7 +1689,7 @@ form .user-details .button-teal input{
 /* iphone 7-9 */
 @media (max-width: 375px) {
     .cta-contain {
-        margin: 30em 0 4em 0;
+        margin: 14em 0 4em 0;
     }
     .image-contain-top .right-float img {
         max-height: 102px;
@@ -1698,6 +1699,11 @@ form .user-details .button-teal input{
     .image-contain-top .left-float img {
         margin-left: -17px;
         width: 130px;
+    }
+    .image-contain-bottom .right-float img {
+        margin-top: -326px;
+        margin-left: 107px;
+        max-width: 207px;
     }
 }
 
