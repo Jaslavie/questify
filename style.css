@@ -157,6 +157,7 @@ html {
 .dropdown-nav {
     background-color: #181A1E;
     box-shadow: #0A0C17;
+    color:#ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1564,16 +1565,21 @@ form .user-details .button-teal input{
 
 
 /* iphone 12*/
-@media (max-width: 414px) {
+@media (max-width: 428px) {
     .phone-mockup img {
-        height: 375px;
+        height: 395px;
+    }
+    .left-benefits .stars-float-black img {
+        display: none;
     }
     .image-contain-bottom img, .image-contain-mid img, .image-contain-top img {
         height: 450px;
     }
     .hero-landing h1,
-    .benefits-contain h2 {
-        font-size: 30px;
+    .benefits-contain h2,
+    .admin-comingsoon h1,
+    .cta-contain h2  {
+        font-size: 35px;
     }
     .right-form .row a img {
         display: none;
@@ -1600,7 +1606,7 @@ form .user-details .button-teal input{
         margin: 12em 0 4em 0;
     }
     .admin-comingsoon {
-        margin: -1326px 1.5em 0 1.5em;
+        margin: -1456px 1.5em 0 1.5em;
         padding: 7em 0;
     }
     
@@ -1712,7 +1718,15 @@ form .user-details .button-teal input{
     }
     
 }
+/* pixel 3 */
+@media (max-width: 393px) {
+    .admin-comingsoon {
+        margin: -1211px 1.5em 0 1.5em;
+        padding: 7em 0;
+    }
+}
 
+/* pixel  4*/
 
 
 
