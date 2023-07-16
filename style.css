@@ -1565,7 +1565,7 @@ form .user-details .button-teal input{
 
 
 /* iphone 12*/
-@media (max-width: 428px) {
+@media (max-width: 430px) {
     .phone-mockup img {
         height: 395px;
     }
