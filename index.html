@@ -6,6 +6,7 @@
     <title>Questify</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <!-- nav bar -->
@@ -21,7 +22,7 @@
             <div class="right-nav">
                 <div class="row">
                     <div class="nav-links">
-                        <a href="#">about us</a>
+                        <a href="about.html">about us</a>
                         <a href="#features">features</a>
                     </div>
                     
@@ -323,7 +324,7 @@
 
             <div class="footer-right-contain">
                 <div class="column">
-                    <a href="#">about us</a>
+                    <a href="about.html">about us</a>
                     <a href="#">contact us</a>
                     <a href="waitlist.html">join waitlist</a>
                 </div>
@@ -348,5 +349,18 @@
             </div>
         </div>
     </div>
+
+    <!-- script for on scroll animations -->
+    <script>
+        ScrollReveal ({
+            reset: false,
+            distance: '60px',
+            duration: 2000,
+            delay: 200
+        });
+
+        ScrollReveal().reveal('.left-benefits, .left-features, .right-features, .right-hero, .cta-contain .button-teal, .admin-comingsoon', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.right-benefits h2, .benefit-highlight-panel, .benefit-panel', { delay: 100, origin: 'bottom', interval: 200 });
+    </script>
 </body>
 </html>

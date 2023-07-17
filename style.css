@@ -131,6 +131,7 @@ html {
     position: sticky;
     top: 0;
     z-index: 999;
+    box-shadow: 0 0 10px rgba(24, 26, 30, 0.5);
 }
 .left-nav {
     justify-content: left;
@@ -332,6 +333,8 @@ html {
 .left-benefits {
     position: relative;
     margin-right: 60px;
+    
+    scroll-margin-top: 200vh;
 }
 .right-benefits {
     display: flex;
@@ -433,6 +436,7 @@ html {
 .right-features img,
 .left-features img {
     max-height: 520px;
+    animation: slidein 2s ease-in-out;
 }
 
 
@@ -523,7 +527,7 @@ html {
 .admin-text-contain {
     text-align: center;
     align-items: center;
-    padding: 0 16em;
+    padding: 0 20em;
     margin: 50px 0;
     z-index: 100;
 }
@@ -732,7 +736,11 @@ form input:-webkit-autofill {
     max-width: 200px;
 }
 .social-contain {
-    margin: 10px 0 10px 20px;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
 }
 .social-contain img {
     max-width: 36px;
@@ -1225,12 +1233,12 @@ form .user-details .button-teal input{
     form .user-details .input-box {
         margin: 1em 4em 1em 0;
     }
-    .admin-contain {
+    /* .admin-contain {
         min-height: 45vh;
-    }
-    .cta-contain {
+    } */
+    /* .cta-contain {
         margin-top: 0;
-    }
+    } */
     .small-screen{
         display: flex;
     }
@@ -1242,7 +1250,7 @@ form .user-details .button-teal input{
         margin: 4em auto 2em auto;
     }
     .admin-comingsoon {
-        margin-top: -1250px;
+        margin-top: -1134px;
         padding: 5em 2em;
     }
     .admin-text-contain {
@@ -1433,6 +1441,7 @@ form .user-details .button-teal input{
     
     
 }
+/* footer wraps */
 @media (max-width: 700px) {
     /* .mid-order-img, .mid-order-text {
         margin: 1em 3em 1em -5em;
@@ -1447,6 +1456,9 @@ form .user-details .button-teal input{
     .footer-end .horizontal-line-left,
     .footer-end .horizontal-line-right {
         display: none;
+    }
+    .social-contain {
+        justify-content: center;
     }
     .footer-end .row-footer{
         flex-direction: column;
@@ -1618,7 +1630,7 @@ form .user-details .button-teal input{
 /* iphone 12*/
 @media (max-width: 430px) {
     .phone-mockup img {
-        height: 395px;
+        height: 375px;
     }
     
     .left-benefits .stars-float-black img {

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <!-- nav bar -->
+     <div class="navbar">
+        <div class="row-nav">
+            <div class="left-nav">
+                <a href="index.html" style="cursor: pointer;">
+                   <img src="images/questify logo full.png" alt=""> 
+                </a>
+                
+            </div>
+            
+            <div class="right-nav">
+                <div class="row">
+                    <div class="nav-links">
+                        <a href="#">about us</a>
+                        <a href="#features">features</a>
+                    </div>
+                    
+                    <a href="waitlist.html" class="button-teal">join now</a>
+                    <div class="toggle-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- dropdown for responsive nav -->
+    <div class="dropdown-nav">
+        <div class="column">
+            <a href="#">about us</a>
+            <a href="#features">features</a>
+            <a href="waitlist.html" class="button-teal">join now</a>
+        </div>
+        
+    </div>
+    <!-- script for dropdown -->
+    <script>
+        const toggleNav = document.querySelector('.toggle-nav')
+        const toggleNavIcon = document.querySelector('.toggle-nav i')
+        const dropDownMenu = document.querySelector('.dropdown-nav')
+
+        toggleNav.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleNavIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+
+
+
+
+<!-- footer section -->
+<div class="footer-contain">
+    <div class="footer-top">
+        <div class="footer-left-contain">
+            <div class="logo-contain">
+                <img src="images/questify logo black full.svg" alt="">
+            </div>
+            <div class="social-contain">
+                <div class="row">
+                    <a href="#"><img src="images/youtube socials.svg" alt=""></a>
+                    <a href="#"><img src="images/linkedn social.svg" alt=""></a>
+                    <a href="#"><img src="images/discord social.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-right-contain">
+            <div class="column">
+                <a href="#">about us</a>
+                <a href="#">contact us</a>
+                <a href="waitlist.html">join waitlist</a>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-end">
+        <div class="row-footer">
+            <div class="footer-left-contain">
+                <p style="white-space: nowrap; text-align: left;">Questify © 2023</p>
+            </div>
+            
+            <div class="horizontal-line-left"></div>
+            <img src="images/questify logo icon.svg" style="max-width: 60px;">
+            <div class="horizontal-line-right"></div>
+            <div class="footer-right-contain">
+               <p style="white-space: nowrap; text-align: right;">built with 🖤 by uci students</p> 
+            </div>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
