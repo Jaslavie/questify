@@ -342,16 +342,21 @@ html {
     justify-content: center;
     width: 50%;
 }
-.right-benefits h1 {
+.right-benefits h2 {
+    position: relative;
     margin-bottom: 40px;
+    z-index: 100;
 }
+
 .right-benefits h2 span {
     text-decoration: underline;
     text-decoration-color: #7FD7FF;
     text-decoration-thickness: 8px;
     text-decoration-style: solid;
     border-radius: 10px;
+    animation: revealUnderline 1s forwards;
 }
+
 .benefit-highlight-panel {
     background-color: #7FD7FF;
     padding: 18px 20px;
