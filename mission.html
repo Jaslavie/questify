@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="shortcut icon" href="images/Questify Logo Icon Black Gradient.svg" type="image/x-icon">
+</head>
+<html><body>
+    <!-- nav bar -->
+    <div class="navbar">
+        <div class="row-nav">
+            <div class="left-nav">
+                <a href="index.html" style="cursor: pointer;">
+                   <img src="images/questify logo full.png" alt=""> 
+                </a>
+                
+            </div>
+            
+            <div class="right-nav">
+                <div class="row">
+                    <div class="nav-links">
+                        <a href="mission.html">about us</a>
+                        <a href="watlist.html#features">features</a>
+                    </div>
+                    
+                    <a href="waitlist.html" class="button-teal">join now</a>
+                    <div class="toggle-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- dropdown for responsive nav -->
+    <div class="dropdown-nav">
+        <div class="column">
+            <a href="mission.html">about us</a>
+            <a href="watlist.html#features">features</a>
+            <a href="waitlist.html" class="button-teal">join now</a>
+        </div>
+        
+    </div>
+    <!-- script for dropdown -->
+    <script>
+        const toggleNav = document.querySelector('.toggle-nav')
+        const toggleNavIcon = document.querySelector('.toggle-nav i')
+        const dropDownMenu = document.querySelector('.dropdown-nav')
+
+        toggleNav.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleNavIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <div class="mission-landing">
+        <div class="row">
+            <div class="left-hero">
+                <h1>on a mission to <span>supercharge</span> your university life</h1>
+            </div>
+            <div class="right-hero">
+                <img src="images/right-mission.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- core values -->
+    <div class="values-contain">
+        <div class="column">
+            <h1>our core values</h1>
+            <div class="row">
+                <div class="benefit-panel">
+                    <div class="row">
+                        <img src="images/serendipity icon.svg" alt="">
+                        <div class="row-benefits-interior">
+                            <h3>serendipitous discovery</h3>
+                            <p>find events that you’re actually interested in without trying</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="benefit-panel">
+                    <div class="row">
+                        <img src="images/supercharge icon.svg" alt="">
+                        <div class="row-benefits-interior">
+                            <h3>supercharging effeciency</h3>
+                            <p>decreasing the time you spend searching so you can focus on doing.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> 
+            <div class="row">
+                <div class="benefit-panel">
+                    <div class="row">
+                        <img src="images/career icon.svg" alt="">
+                        <div class="row-benefits-interior">
+                            <h3>career-driven opportunities</h3>
+                            <p>we recommend you events based on your professional goals</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="benefit-panel">
+                    <div class="row">
+                        <img src="images/relationship icon.svg" alt="">
+                        <div class="row-benefits-interior">
+                            <h3>cultivating relationships</h3>
+                            <p>we value authentic relationships which is why we connect you directly to clubs</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> 
+        </div>
+        
+    </div>
+    <!-- final cta -->
+    <div class="cta-contain">
+        <div class="cta-text-contain">
+            <h2>ready to <span>10x</span> your productivity?
+            </h2>
+            <p>we do the hard work for you so you only focus on doing.</p>
+            <a href="waitlist.html" class="button-teal" style="z-index: 100; margin: 4em auto; align-items: center;">
+                <div class="row">
+                  <p style="white-space: nowrap;">join the waitlist</p>
+                    <img src="images/arrow up black.png" alt="">   
+                </div>
+            </a>
+        </div>
+    </div>
+ <!-- script for on scroll animations -->
+ <script>
+    ScrollReveal ({
+        reset: false,
+        distance: '60px',
+        duration: 2000,
+        delay: 200
+    });
+
+    ScrollReveal().reveal('.left-benefits, .left-features, .right-features, .right-hero, .cta-contain .button-teal, .admin-comingsoon, .dashboard-contain', { delay: 150, origin: 'bottom' });
+    
+    ScrollReveal().reveal('.right-benefits h2, .benefit-highlight-panel, .benefit-panel', { delay: 100, origin: 'bottom', interval: 200 });
+    
+    
+
+</script>
+
+ <!-- footer section -->
+ <div class="footer-contain">
+    <div class="footer-top">
+        <div class="footer-left-contain">
+            <div class="logo-contain">
+                <img src="images/questify logo black full.svg" alt="">
+            </div>
+            <div class="social-contain">
+                <div class="row">
+                    <a href="#"><img src="images/youtube socials.svg" alt=""></a>
+                    <a href="#"><img src="images/linkedn social.svg" alt=""></a>
+                    <a href="https://discord.gg/F5zYqYzY3Z"><img src="images/discord social.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-right-contain">
+            <div class="column">
+                <a href="mission.html">about us</a>
+                <a href="https://discord.gg/F5zYqYzY3Z">contact us</a>
+                <a href="waitlist.html">join waitlist</a>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    <div class="footer-end">
+        <div class="row-footer">
+            <div class="footer-left-contain">
+                <p style="white-space: nowrap; text-align: left;">Questify © 2023</p>
+            </div>
+            
+            <div class="horizontal-line-left"></div>
+            <img src="images/questify logo icon.svg" style="max-width: 60px;">
+            <div class="horizontal-line-right"></div>
+            <div class="footer-right-contain">
+               <p style="white-space: nowrap; text-align: right;">built with 🖤 by uci students</p> 
+            </div>
+            
+        </div>
+    </div>
+</div>
+</body></html>

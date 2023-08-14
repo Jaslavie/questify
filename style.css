@@ -154,7 +154,9 @@ html {
     transition: color 0.5s ease;
 }
 
-.navbar .nav-links a:hover {
+.navbar .nav-links a:hover,
+.nav-links:active,
+.nav-links:visited {
     color: #7FD7FF;
 }
 
@@ -175,7 +177,7 @@ html {
     margin: auto;
     transition: height 0.3s ease;
     position: sticky;
-    top: 87.76px;
+    top: 70px;
     z-index: 100000;
 }
 .dropdown-nav a {
@@ -218,6 +220,7 @@ html {
     height: 220px;
     width: 100vw;
     margin: auto;
+    top: 70px;
 }
 
 /* hero landing page */
@@ -382,7 +385,7 @@ html {
     margin-top: 28px;
 }
 .benefit-panel h3 {
-    color:#7FD7FF;
+    color:#0A0C17;
 }
 .stars-float-black img {
     margin-top: 170px;
@@ -400,7 +403,7 @@ html {
     padding: 4em 6em;
 }
 .top-features-contain {
-    min-height: 40vh;
+    min-height: 70vh;
     padding:  4em 6em 4em 8em;
     display: flex;
     align-items: center;
@@ -432,11 +435,13 @@ html {
     display: flex;
     justify-content: flex-start;
     padding: 0 4em 0 0;
+    margin-top: -40px;
 }
 .right-features {
     display: flex;
     width: 50%;
     justify-content: flex-end;
+    margin-top: -40px;
 }
 .right-features img,
 .left-features img {
@@ -521,13 +526,16 @@ html {
 }
 .admin-contain {
     background-color: #ffffff;
-    min-height: 100vh;
     padding: 0 8em;
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     flex-direction: column;
     position: relative;
+}
+
+.dashboard-contain img {
+    width: 90vw;
 }
 .admin-text-contain {
     text-align: center;
@@ -661,7 +669,6 @@ form input:-webkit-autofill {
 }
 .cta-text-contain {
     padding: 6em 20em 12em 20em;
-    margin-top: 308px;
     z-index: 500;
     text-align: center;
     align-items: center;
@@ -973,6 +980,50 @@ form .user-details .button-teal input{
 
 
 
+/* mission */
+.mission-landing {
+    
+    background-color: #181A1E;
+    padding: 0 8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mission-landing h1 {
+    color:#ffffff;
+}
+.mission-landing .right-hero {
+    justify-content: center;
+    margin-left: 80px;
+}
+.mission-landing .right-hero img {
+    margin-top: -127px;
+    width: 36em;
+}
+
+.values-contain {
+    background-color: #ffffff;
+    padding: 5em 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.values-contain h1 {
+    text-align: center;
+    margin-bottom: 2vw;
+}
+.values-contain .benefit-panel {
+    margin: 20px 20px;
+    width: 100%;
+}
+.benefit-panel p {
+    color: rgba(40, 40, 40, 0.50);
+}
+
+
+
+
+
 
 
 /* responsiveness */
@@ -998,6 +1049,22 @@ form .user-details .button-teal input{
     
 
 @media (max-width: 1330px) {
+    .mission-landing .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mission-landing h1 {
+        text-align: center;
+    }
+    .mission-landing .right-hero,
+    .mission-landing .left-hero {
+        margin-top: 20vh;
+        margin-left: 0;
+    }
+    .values-contain {
+        padding: 6em;
+    }
+
     .hero-landing {
         padding: 0 6.5em;
     }
@@ -1024,7 +1091,8 @@ form .user-details .button-teal input{
     }
     .top-features-contain .right-features:not(.float-left), 
     .top-features-contain .left-features:not(.float-right) {
-        margin: 2em auto;
+        margin: 2em 0;
+        width: 100%;
         align-items: center;
         display: flex;
         justify-content: center;
@@ -1063,7 +1131,7 @@ form .user-details .button-teal input{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 4em 8em 2em 8em;
+        margin: 4em 0;
     }
     
     .mid-order-text {
@@ -1142,15 +1210,7 @@ form .user-details .button-teal input{
     
 }
 
-@media (max-width:1200px) {
-    .admin-comingsoon {
-        margin-top: -1150px;
-    }
-    .cta-contain {
-        margin-top: 130px;
-        margin-bottom: 4em;
-    }
-}
+
 @media (max-width: 1168px) {
     .benefits-contain {
         flex-wrap: wrap;
@@ -1170,9 +1230,24 @@ form .user-details .button-teal input{
 
 
 /* hero pushed into a column */
-@media (max-width: 1130px) {
+@media (max-width: 1145px) {
     .hero-landing {
         margin: 4em 0;
+    }
+    .values-contain .row {
+        flex-direction: column;
+    }
+    .values-contain .benefit-panel .row {
+        flex-direction: row;
+    }
+    .values-contain .benefit-panel {
+        padding: 30px;
+    }
+    .values-contain img {
+        width: 75px;
+    }
+    .mission-landing .right-hero {
+        margin-bottom: 0;
     }
     .right-hero .right-float img {
         margin-bottom: 400px;
@@ -1282,22 +1357,8 @@ form .user-details .button-teal input{
 }
 /* Adjust the admin coming soon to vertical column  + nav bar responsive*/
 @media (max-width: 830px) {
-    .admin-comingsoon-text-contain {
-        width: 80%;
-        padding: 0 2em;;
-    }
-    .admin-comingsoon form{
-        width: 80%;
-        margin: 4em auto 2em auto;
-    }
-    .admin-comingsoon form input {
-        width: 70%;
-    }
-    
-    .admin-comingsoon {
-        margin:  4em;
-        padding: 4em 0;
-        margin-top: -1200px;
+    .mission-landing {
+        padding: 0 2em;
     }
     .cta-text-contain {
         padding: 0 8em;
@@ -1342,7 +1403,7 @@ form .user-details .button-teal input{
         padding: 1em 2em;
     }
     .top-features-contain {
-        padding: 4em -4em 4em 8em;
+        padding: 0;
     }
     .image-contain-bottom img, 
     .image-contain-mid img,
@@ -1513,20 +1574,20 @@ form .user-details .button-teal input{
     }
 } 
 
-@media (max-width: 612px) {
-    .admin-comingsoon {
-        margin: -1451px 40px 0 40px;
-        
-    }
-    .cta-contain {
-        margin: 18em 0 4em 0;
-    }
-    
-}
-
-@media (max-width: 580px) {
+@media (max-width: 590px) {
     .icons-float img {
         display: none;
+    }
+    .mission-landing .right-hero img {
+        width: 80vw;
+    }
+    .values-contain .benefit-panel .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .values-contain .row-benefits-interior {
+        margin-left: 0;
+        margin: 2em 0;
     }
     
     .admin-comingsoon {
@@ -1548,7 +1609,9 @@ form .user-details .button-teal input{
 /* smallest screen size on macbook*/
 
 @media (max-width: 500px) {
-    
+    .features-contain {
+        padding: 6em 0;
+    }
     .phone-mockup img {
         height: 500px;
     }
@@ -1624,9 +1687,7 @@ form .user-details .button-teal input{
         margin: -1550px 1.5em 0 1.5em;
         padding: 8em 0;
     }
-    .cta-contain {
-        margin: 25em 0 4em 0;
-    }
+    
     
     
 }
@@ -1671,9 +1732,7 @@ form .user-details .button-teal input{
         width: 153px;
         margin-left: 47px;
     }
-    .cta-contain {
-        margin: 12em 0 4em 0;
-    }
+   
     .admin-comingsoon {
         margin: -1456px 1.5em 0 1.5em;
         padding: 7em 0;
@@ -1764,9 +1823,7 @@ form .user-details .button-teal input{
 
 /* iphone 7-9 */
 @media (max-width: 375px) {
-    .cta-contain {
-        margin: 27em 0 4em 0;
-    }
+    
     .image-contain-top .right-float img {
         max-height: 102px;
         margin-top: -133px;
@@ -1789,6 +1846,9 @@ form .user-details .button-teal input{
 }
 /* pixel 3 */
 @media (max-width: 393px) {
+    h1 {
+        font-size: 40px;
+    }
     .admin-comingsoon {
         margin: -1211px 1.5em 0 1.5em;
         padding: 7em 0;
@@ -1906,7 +1966,6 @@ form .user-details .button-teal input{
     form .user-details .button-teal {
         margin: 3em auto 5em auto;
     }
-    
 }
 
 
